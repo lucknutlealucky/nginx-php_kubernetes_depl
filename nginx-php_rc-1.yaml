@@ -1,10 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  app.kubernetes.io/name: sawtooth-0
-  name: nginx-php-1
+  name: nginx-1
   labels:
-    app: nginx-php-1
+    app: nginx-1
 spec:
   type: NodePort
   ports:
@@ -13,5 +12,5 @@ spec:
     targetPort: 80
     nodePort: 30391 #The range of valid ports is 30000-32767
   selector:
-    app.kubernetes.io/name: sawtooth-0
+    app: nginx-1
 ---
