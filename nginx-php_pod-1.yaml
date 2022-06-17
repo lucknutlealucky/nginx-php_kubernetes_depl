@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       labels:
-        run : nginx-1
+        app: nginx-1
     spec:
       volumes:
         - name: www
