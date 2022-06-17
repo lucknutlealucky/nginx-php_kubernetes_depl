@@ -1,0 +1,3 @@
+kubectl create -f nginx-php_pv-1.yaml
+kubectl create -f nginx-php_rc-1.yaml
+kubectl create -f nginx-php_pod-1.yaml
